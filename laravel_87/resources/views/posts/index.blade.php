@@ -14,7 +14,7 @@
                             <div class="col-md-12">
                                 <div class="post post-thumb">
                                     <a class="post-img" href="{{ route('posts.show', $posts->first()) }}">
-                                        <img src="@if($posts->first()->image){{ Storage::url($posts->first()->image->url) }} @else https://c4.wallpaperflare.com/wallpaper/636/671/752/space-astronaut-beer-moon-wallpaper-preview.jpg @endif" alt="">
+                                        <img src="@if($posts->first()->image){{'public' . Storage::url($posts->first()->image->url) }} @else https://c4.wallpaperflare.com/wallpaper/636/671/752/space-astronaut-beer-moon-wallpaper-preview.jpg @endif" alt="">
                                     </a>
                                     <div class="post-body">
                                         <div class="post-meta">
